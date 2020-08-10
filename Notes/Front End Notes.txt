@@ -1,0 +1,63 @@
+---FUNCTIONAL FEATURES---
+
+1. Search
+	by zip code, address, price, #of bed and bath, type of housing, keywords
+
+2. Rent
+	ability to rent the property that is listed
+	
+3. Post listing
+	ability to post a listing for users to rent from you
+
+4. Filter System (maybe part of search)
+	sorting the page based on desired keyword/value
+
+5. Login/Registration
+	only available to those with a .sfsu.edu email 
+
+6. Reset account
+	username/password reset incase the user forgets their information
+
+7. Watchlist
+	a list of housing options that the user wishes to save for later
+	
+8. Comparison Page
+	comparing multiple homes qualities such as number of bedrooms, bathrooms, square footage ect
+
+9. notable resturaunts/activities around the area
+	tough but maybe 3-5 notable locations within walking distance
+	
+10. Transportations nearby
+	public transport lines and time to walk to
+
+11. User Ratings
+	ratings for renters and posters to help users determine the possible ease of doing buisness with another user.
+	
+12. Admin ability to approve/remove postings
+	ban users
+	
+13. In house view
+	this would include pictures of all rooms, hopefully including different angles from the poster
+
+14. Protected Pages	
+	pages that are only allowed to be viewed by a registered user. If the user is not registered and attempts to access one of these pages,
+	instead the user will be redirected to the registration or login page
+	
+15. Encrypted user data
+	we must ensure that the sensitive data that a user gives to us is not stored in plain text and should instead be encrypted first
+	
+16. Share to friend
+	An ability to share the listing to a friend for possible joining together for rental
+	
+17. Renters description of house
+	the owner of the property will be able to give a description of the property and surounding neighborhood
+	
+18. Comments on user profile page
+	give other users the ability to post comments on sombodies page to go into further detail on 
+	how their interaction and long term dealings with the user have been
+	
+19. All user properties
+	ability to see all properties that a specific user owns/rents that is listed on the website
+	
+20. Live feed
+	the user will not need to refresh the page when a listing is no longer available/ a new one is listed

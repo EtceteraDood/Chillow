@@ -1,0 +1,48 @@
+extends layout
+block content
+    br
+    head
+        link(rel='stylesheet' href='./stylesheets/dashboardStyle.css')
+        script(type='text/javascript' src='./javascripts/getMessages.js')
+    .container
+        .row
+            .col-md-3.sidebar(style='top: 150px')
+                div
+                    img.avatar-icon(src='https://i.stack.imgur.com/AIQ61.png')
+                .text-size
+                    p
+                        b #{userFullName}
+                include userNav.pug
+            .col-md-9(style='top: 100px')
+                .container-fluid#switcher.bg-secondary(style='display:none')
+                .container-fluid#profile(style='display:block')
+                    include profile.pug
+                .container-fluid#messages(style='display:none')
+                    include messages.pug
+                .container-fluid#posted-listings(style='display:none')
+                    if query.length > 0
+                        .container-fluid.listingDiv.overflow-auto
+                            include listingDisplay.pug
+        .row
+            .col-4
+
+//-    
+
+    .container.pb-5.bg-light.w-50.mt-5
+        if postMessage
+            h1 May Take 24 Hours to Approve
+        .row
+            .col-4
+                include userNav.pug
+            .col-8
+                body
+                a(href='/api/logout') LOGOUT
+                .container-fluid#switcher.bg-secondary(style='display:none')
+                .container-fluid#profile(style='display:block')
+                    include profile.pug
+                .container-fluid#messages(style='display:none')
+                    include messages.pug
+                .container-fluid#posted-listings(style='display:none')
+                    if query.length > 0
+                        .container-fluid.listingDiv.overflow-auto
+                            include listingDisplay.pug

@@ -1,0 +1,19 @@
+name: Push to Deploy Branch
+on: 
+  push:
+    branches: 
+      - master
+jobs:
+  deploy:
+    name: Deploy to AWS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master 
+      
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@master
+        env:
+          REPO: self
+          BRANCH: deployment
+          FOLDER: application/team6-termproject
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
