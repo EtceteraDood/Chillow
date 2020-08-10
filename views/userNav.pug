@@ -1,0 +1,16 @@
+script(type='text/javascript' src='./javascripts/switcher.js')
+
+.pos-f-t
+    .container-fluid.bg-secondary.opac
+        a.nav-link.text-light.rounded-0.text-nowrap(type='button' onclick='switcher("profile")') Profile
+        //a.nav-link.text-light.rounded-0.text-nowrap(href='#') Favorite Listings
+        a.nav-link.text-light.rounded-0.text-nowrap(type='button' onclick='switcher("posted-listings")') Posted Listings
+        a.nav-link.text-light.rounded-0.text-nowrap(type='button' onclick='switcher("messages")') Messages
+
+style.
+    .opac {
+        opacity: .95 !important;
+        border-radius: 6px;
+        min-width: 800px
+    }
+
